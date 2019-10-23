@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// Form style
+// -----------------------------------------------------------------------------
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    height: 58px;
+    border: $bdr-solid-1;
+    border-radius: 8px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0);
+    font: {
+        family: $font-default;
+        size: 1em;
+    }
+    outline: none;
+    padding: 0 20px;
+    transition: $transition-all;
+    width: 100%;
+}
+select {
+    color: #a3a3a3;
+}
+::placeholder {
+    color: $color-third;
+    opacity: 1;
+}
+textarea {
+    padding-top: 20px;
+}
+.yourUrl {
+    width: 800px;
+}
+#shortBox .shortInner input[type="text"] {
+    @include breakpoint(lg) {
+        width: calc(100% - 42px);
+    }
+    @include breakpoint(sm) {
+        width: 100%;
+    }
+}

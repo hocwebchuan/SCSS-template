@@ -1,0 +1,325 @@
+/* Configuration */
+/* Base */
+html {
+  overflow-x: hidden; }
+
+body {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  word-wrap: break-word; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, object, iframe, pre, code, p, blockquote, form, fieldset, legend, table, th, td, caption, tbody, tfoot, thead, article, aside, figure, footer, header, hgroup, menu, nav, section, audio, video, canvas {
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, menu {
+  display: block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: none; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ul, ol, menu {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: none;
+  font-variant: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+legend {
+  color: #000; }
+
+a img, map a {
+  border: none; }
+
+a {
+  text-decoration: none; }
+
+a:hover, a:active, a:focus {
+  outline: 0;
+  text-decoration: none; }
+
+embed {
+  width: 100%; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+img, object, embed {
+  max-width: 100%;
+  height: auto; }
+
+object, embed {
+  height: 100%; }
+
+img {
+  -ms-interpolation-mode: bicubic; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+a {
+  color: #1a5eba; }
+  a:hover {
+    color: #5392e7;
+    transition: 0.3s color; }
+
+body {
+  background-color: #f5f7fb;
+  color: #222317;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  -webkit-font-smoothing: antialiased;
+  min-width: 320px; }
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/* Layout */
+.row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%; }
+  .row.row-right {
+    justify-content: flex-end; }
+  .row.row-center {
+    justify-content: center; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  .col-md-1 {
+    width: 33.33333%; }
+  .col-md-2 {
+    width: 66.66667%; }
+  .col-md-3 {
+    width: 100%; } }
+
+@media only screen and (max-width: 480px) {
+  .col-xs-1 {
+    width: 50%; }
+  .col-xs-2 {
+    width: 100%; } }
+
+#header {
+  background-color: #ff0;
+  color: #fff; }
+
+#side {
+  width: 300px; }
+
+/* Component */
+button {
+  background: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-out; }
+
+.btn {
+  background-color: #16b1ec;
+  border-radius: 4px;
+  color: #FFF;
+  font-size: 13px;
+  height: 40px;
+  padding: 0 20px;
+  text-align: center; }
+  .btn:hover {
+    background-color: #0599d2; }
+  .btn.btn-search {
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #16b1ec;
+    font-size: 20px;
+    height: 58px;
+    margin-top: -29px;
+    min-width: 128px;
+    padding: 0 30px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    text-align: center; }
+    .btn.btn-search:hover {
+      background-color: #0599d2; }
+  .btn.btn-delete-list {
+    border-radius: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #f78286;
+    height: 26px;
+    padding: 6px 10px 4px; }
+    .btn.btn-delete-list:hover {
+      background-color: #ff656b; }
+  .btn.btn-copy {
+    background-color: #dde6fb;
+    color: #1a5eba;
+    min-width: 90px; }
+    .btn.btn-copy:hover {
+      background-color: #7ca3f9;
+      color: #fff; }
+    .btn.btn-copy.copied {
+      background-color: #06c31b;
+      color: #fff; }
+
+@media only screen and (max-width: 480px) {
+  #shortBox .shortInner button {
+    border-radius: 8px;
+    position: static;
+    top: 0;
+    margin-top: 20px;
+    width: 100%; } }
+
+@media only screen and (max-width: 480px) {
+  #shortBox .result .btn-group button {
+    margin-top: 10px;
+    min-width: 200px; } }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  height: 58px;
+  border: 1px solid #d9dadb;
+  border-radius: 8px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  outline: none;
+  padding: 0 20px;
+  transition: 0.3s all ease-out;
+  width: 100%; }
+
+select {
+  color: #a3a3a3; }
+
+::placeholder {
+  color: #5e613f;
+  opacity: 1; }
+
+textarea {
+  padding-top: 20px; }
+
+.yourUrl {
+  width: 800px; }
+
+@media only screen and (max-width: 1024px) {
+  #shortBox .shortInner input[type="text"] {
+    width: calc(100% - 42px); } }
+
+@media only screen and (max-width: 480px) {
+  #shortBox .shortInner input[type="text"] {
+    width: 100%; } }
+
+h2.bHead {
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 50px;
+  position: relative;
+  text-align: center; }
+  h2.bHead:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    border-radius: 4px;
+    margin-left: -40px;
+    width: 80px;
+    height: 4px;
+    background-color: #16b1ec; }
+  h2.bHead a {
+    color: #222317;
+    text-decoration: none; }
+
+/*.Page specific styles */

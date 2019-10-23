@@ -1,0 +1,69 @@
+// -----------------------------------------------------------------------------
+// Button style
+// -----------------------------------------------------------------------------
+button {
+    @include button;
+}
+.btn {
+    background-color: $bg-color-blue;
+    border-radius: 4px;
+    color: $color-white;
+    font-size: $fontsize-s;
+    height: 40px;
+    padding: 0 20px;
+    text-align: center;
+    &:hover {
+        background-color: $btn-bg-hover;
+    }
+    &.btn-search {
+        @include bdr-position(right, 10px);
+        background: $bg-color-blue; 
+        font-size: $fontsize-m;
+        height: 58px;
+        margin-top: -29px;
+        min-width: 128px;
+        padding: 0 30px;
+        @include position(tr,50%,0);
+        text-align: center;
+        &:hover {
+            background-color: $btn-bg-hover;
+        }
+    }
+    &.btn-delete-list {
+        @include bdr-position(top, 6px);
+        background-color: $btn-bg3;
+        height: 26px;
+        padding: 6px 10px 4px;
+        &:hover {
+            background-color: $btn-bg3-hover;
+        }
+    }
+    &.btn-copy {
+        background-color: $btn-bg2;
+        color: $btn-color2;
+        min-width: 90px;
+        &:hover {
+            background-color: $btn-bg2-hover;
+            color: $btn-color2-hover;
+        }
+        &.copied {
+            background-color: #06c31b;
+            color: #fff;
+        }
+    }
+}
+#shortBox .shortInner button {
+    @include breakpoint(sm) {
+        border-radius: 8px;
+        position: static;
+        top: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+#shortBox .result .btn-group button {
+    @include breakpoint(sm) {
+        margin-top: 10px;
+        min-width: 200px;
+    }
+}

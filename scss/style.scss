@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+/* Configuration */
+@import
+'utilities/variables',
+'utilities/mixins';
+
+/* Base */
+@import
+'base/reset',
+'base/base';
+
+/* Layout */
+@import
+'layout/grid',
+'layout/header',
+'layout/nav',
+'layout/main',
+'layout/aside',
+'layout/footer';
+
+/* Component */
+@import
+'components/button',
+'components/forms',
+'components/headline';
+
+/*.Page specific styles */
+@import
+'pages/home'
