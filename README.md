@@ -4,6 +4,7 @@ This template is a basic template use for SCSS project.
 ## Table of Contents
 - [Folder Structure](#folder-structure)
 - [Available Scripts](#available-scripts)
+- [Some helpful modules](#Some-helpful-modules)
 - [Something Missing?](#something-missing)
 
 ## Folder Structure
@@ -59,8 +60,8 @@ npm install node-sass
 npm run scss
 ```
 
-## Modules
-Some helpful modules:
+## Some helpful modules
+### Border position
 ```css
 @mixin bdr-position($pos,$radius) {
     border-radius: 0;
@@ -91,6 +92,37 @@ border-top-left-radius: 5px;
 border-top-right-radius: 5px;
 ```
 
+### Position absolute
+```css
+@mixin position($pos,$y,$x) {
+    position: absolute;
+    @if $pos == 'tl' {
+        left: $x;
+        top: $y;
+    }@else if $pos == 'tr' {
+        right: $x;
+        top: $y;
+    }@else if $pos == 'bl' {
+        left: $x;
+        bottom: $y;
+    }@else if $pos == 'br' {
+        right: $x;
+        bottom: $y;
+    }
+}
+```
+
+Easy to use:
+```css
+position(tl,10px,20px)
+```
+
+It will compile to:
+```css
+position: absolute;
+left: 20px;
+top: 10px;
+```
 
 ## Something missing?
 
