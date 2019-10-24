@@ -16,9 +16,21 @@ SCSS-template/
     style.css
   scss/
     base/
+      mixins/
+        _breakpoints.scss
+        _default.scss
+        _flexbox.scss
+        _hover.scss
+        _misc.scss
+        _module.scss
+        _transform.scss
       _base.scss
+      _mixins.scss
       _reset.scss
+      _variables.scss
     components/
+      vendor/
+        _sample_lightbox.scss
       _button.scss
       _form.scss
       _headline.scss
@@ -30,8 +42,9 @@ SCSS-template/
       _main.scss
       _nav.scss
     pages/
-    utilies/
-    style.css
+      _contact.scss
+      _home.scss
+    style.scss
   package.json
   package-lock.json
   README.md
@@ -45,6 +58,39 @@ npm install
 npm install node-sass
 npm run scss
 ```
+
+## Modules
+Some helpful modules:
+```css
+@mixin bdr-position($pos,$radius) {
+    border-radius: 0;
+    @if $pos == 'top' {
+        border-#{$pos}-left-radius: $radius;
+        border-#{$pos}-right-radius: $radius;
+    }@else if $pos == 'bottom' {
+        border-#{$pos}-left-radius: $radius;
+        border-#{$pos}-right-radius: $radius;
+    }@else if $pos == 'right' {
+        border-bottom-#{$pos}-radius: $radius;
+        border-top-#{$pos}-radius: $radius;
+    }@else if $pos == 'left' {
+        border-bottom-#{$pos}-radius: $radius;
+        border-top-#{$pos}-radius: $radius;
+    }
+}
+```
+
+Easy to use:
+```css
+bdr-position(top,5px)
+```
+
+It will compile to:
+```css
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+```
+
 
 ## Something missing?
 
