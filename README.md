@@ -88,6 +88,7 @@ bdr-position(top,5px)
 
 It will compile to:
 ```css
+border-radius: 0;
 border-top-left-radius: 5px;
 border-top-right-radius: 5px;
 ```
