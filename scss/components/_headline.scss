@@ -1,23 +1,9 @@
 // -----------------------------------------------------------------------------
 // Headline style
 // -----------------------------------------------------------------------------
-h2.bHead {
-    font-size: $fontsize-b;
-    line-height: 46px;
-    margin-bottom: 50px;
-    position: relative;
-    text-align: center;
-    &:after {
-        content: "";
-        @include position(bl,-20px,50%);
-        border-radius: 4px;
-        margin-left: -40px;
-        width: 80px;
-        height: 4px;
-        background-color: $bg-color-blue;
-    }
-    a {
-        color: $text-color;
-        text-decoration: none;
-    }
-}
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}

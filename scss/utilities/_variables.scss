@@ -7,7 +7,16 @@
 $font-default: "Helvetica Neue",Helvetica,Arial,sans-serif !default;
 
 // Text color
-$text-color: #222317 !default;
+$color-default: #222317 !default;
+$color-secondary: lighten($color-default, 10%) !default;
+$color-third: lighten($color-default, 20%) !default;
+
+// All other color
+$color-success: #7be0eb !default;
+$color-warning: yellow !default;
+$color-error: #e5004f !default;
+$color-black: #000 !default;
+$color-white: #FFF !default;
 
 // Link color
 $link-color: #1a5eba !default;
@@ -16,33 +25,12 @@ $link-color-hover: lighten($link-color, 20%) !default;
 // Shadow color
 $shadow-color: #dfdddf !default;
 
-// All other color
-$color-primary: #222317 !default;
-$color-secondary: lighten($color-primary, 10%) !default;
-$color-third: lighten($color-primary, 20%) !default;
-
-$color-success: #7be0eb !default;
-$color-warning: yellow !default;
-$color-error: #e5004f !default;
-$color-black: #000 !default;
-$color-white: #FFF !default;
-
-// Hover
-$color-primary-hover: lighten($link-color, 30%) !default;
-$color-sucess-hover: lighten($color-success, 10%) !default;
-
-$color-primary: $color-primary !default;
-$color2: $color-secondary !default;
-$color3: #666 !default;
-
 //line
 $bg-color-blue: #16b1ec;
-$color-red: #e00209;
-$color-red-l: lighten($color-red, 20%) !default;
 
 //border
-$bdr-color: #d9dadb;
 $bdr-solid-1: 1px solid #d9dadb;
+$bdr-radius: 4px;
 
 //button
 $btn-bg: #16b1ec;
@@ -76,13 +64,16 @@ $fontsize-b: 40px;
 $fontsize-m: 20px;
 $fontsize-s: 13px;
 
-$fe12: 1.2em;
-
 // px
 $x5: 5px;
 $x10: 10px;
 $x20: 20px;
 $x30: 30px;
+$x40: 40px;
+
+//top-bottom right-left
+$x-10: 0 10px;
+$x-20: 0 20px;
 $x-center: 0 auto;
 
 // %
