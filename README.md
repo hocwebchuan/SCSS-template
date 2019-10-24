@@ -1,4 +1,4 @@
-# React Server and Client
+# SCSS TEMPLATE
 This template is a basic template use for SCSS project.
 
 ## Table of Contents
