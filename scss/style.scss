@@ -1,12 +1,9 @@
 @charset 'UTF-8';
 
-/* Configuration */
-@import
-'utilities/variables',
-'utilities/mixins';
-
 /* Base */
 @import
+'base/variables',
+'base/mixins',
 'base/reset',
 'base/base';
 
